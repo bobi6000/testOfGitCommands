@@ -1,0 +1,38 @@
+Naming Variables
+The name you give to a variable, conveniently referred to as a variable name, can be defined with some flexibility.
+A variable name is a sequence of one or more uppercase or lowercase letters, digits, and underscore characters (_)
+that begin with a letter (incidentally, the underscore character counts as a letter). Examples of legal variable names
+are as follows:
+Caution T he maximum number of characters that you can have in a variable name will depend on your compiler.
+A minimum of 31 characters must be supported by a compiler that conforms to the C standard, so you can always
+use names up to this length without any problems. I suggest that you don’t make your variable names longer than this
+anyway. Very long names become tedious to type and make the code hard to follow. Some compilers will truncate names
+Radius diameter Auntie_May Knotted_Wool D678
+A variable name must not begin with a digit, so 8_Ball and 6_pack aren’t legal names. A variable name must not
+include characters other than letters, underscores, and digits, so Hash! and Mary-Lou aren’t allowed as names. This
+last example is a common mistake, but Mary_Lou would be quite acceptable. Because spaces aren’t allowed in a name,
+Mary Lou would be interpreted as two variable names, Mary and Lou. Variables starting with one or two underscore
+characters are often used in the header files, so don’t use the underscore as the first character in your variable names;
+otherwise, you run the risk of your name clashing with the name of a variable used in the standard library. For
+example, names such as _this and _that are best avoided. Another very important point to remember about variable
+names is that they are case sensitive. Thus, the names Democrat and democrat are distinct.
+Although you can call variables whatever you want within the preceding constraints, it’s worth calling them
+something that gives you a clue as to what they contain. Assigning the name x to a variable that stores a salary isn’t
+very helpful. It would be far better to call it salary and leave no doubt as to what it is.
+A variable name must not begin with a digit, so 8_Ball and 6_pack aren’t legal names. A variable name must not
+that are too long.
+There are several different types of variables, and each type of variable is used for storing a particular kind of data.
+There are several types that store integers, types that store nonintegral numerical values, and types that store
+characters. Where there are several types to store a particular kind of data, such as integers, the difference between
+the types is in the amount of memory they occupy and the range of values they can hold. I will introduce variables that
+you use to store integers first.
+An integer is any whole number without a decimal point. Here are some examples:
+123 10,999,000,000 20,000 88 1
+You will recognize these values as integers, but what I’ve written here isn’t quite correct so far as your program
+is concerned. You can’t include commas in an integer, so the second value would actually be written in a program
+as 10999000000 and the third value would be 20000.
+Here are some examples of numbers that are not integers:
+1.234 999.9 2.0 –0.0005 3.14159265
+Normally, 2.0 would be described as an integer because it’s a whole number, but as far as your computer
+is concerned, it isn’t because it is written with a decimal point. If you want an integer you must write it as 2 with
+no decimal point. Integers are always written in C without a decimal point; if there’s a decimal point, it isn’t an
