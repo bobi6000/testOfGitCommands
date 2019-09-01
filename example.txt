@@ -7,7 +7,7 @@ Caution T he maximum number of characters that you can have in a variable name w
 A minimum of 31 characters must be supported by a compiler that conforms to the C standard, so you can always
 use names up to this length without any problems. I suggest that you don’t make your variable names longer than this
 anyway. Very long names become tedious to type and make the code hard to follow. Some compilers will truncate names
-Radius diameter Auntie_May Knotted_Wool D678
+============================
 A variable name must not begin with a digit, so 8_Ball and 6_pack aren’t legal names. A variable name must not
 include characters other than letters, underscores, and digits, so Hash! and Mary-Lou aren’t allowed as names. This
 last example is a common mistake, but Mary_Lou would be quite acceptable. Because spaces aren’t allowed in a name,
@@ -18,7 +18,8 @@ example, names such as _this and _that are best avoided. Another very important 
 names is that they are case sensitive. Thus, the names Democrat and democrat are distinct.
 Although you can call variables whatever you want within the preceding constraints, it’s worth calling them
 something that gives you a clue as to what they contain. Assigning the name x to a variable that stores a salary isn’t
-very helpful. It would be far better to call it salary and leave no doubt as to what it is.
+very helpful. It would be far better to call it salary and leave no doubt as to what
+==========================
 A variable name must not begin with a digit, so 8_Ball and 6_pack aren’t legal names. A variable name must not
 that are too long.
 There are several different types of variables, and each type of variable is used for storing a particular kind of data.
